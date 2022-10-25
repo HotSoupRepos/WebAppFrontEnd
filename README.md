@@ -12,7 +12,8 @@ This project is currently run exclusively by a wonderful crew of 100% volunteers
  </div>
  
  
-## Installation
+<h2 align='center'> How to run application on local machine </h2>
+
 ```
 git clone https://github.com/HotSoupRepos/WebAppFrontEnd.git
 ```
@@ -26,4 +27,20 @@ cd web-app
 ```
 npm run start
 ```
+
+<h2 align='center'> How to contribute to HotSoups </h2>
+
+```
+git switch - c (name of your feature branch) or git checkout (name of your feature branch)
+```
+```
+git push
+```
+
+```
+make pull request on github to the DEV BRANCH 
+```
+
+
+
 
