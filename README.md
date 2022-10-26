@@ -31,7 +31,7 @@ npm run start
 <h2 align='center'> How to contribute to HotSoups </h2>
 
 ```
-git switch - c (name of your feature branch) or git checkout (name of your feature branch)
+git switch - c (name of your feature branch) or git checkout -b(name of your feature branch)
 ```
 ```
 git push
