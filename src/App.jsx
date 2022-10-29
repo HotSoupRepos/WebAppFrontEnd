@@ -1,5 +1,9 @@
 import React from "react";
-import "./App.css";
+import PhoneDemo from "../src/containers/PhoneDemo/PhoneDemo";
+import Contact from "../src/containers/Contact/Contact";
+import Contributors from "../src/containers/Contributors/Contributors";
+
+import "./global.css";
 
 const App = () => {
 	return (
