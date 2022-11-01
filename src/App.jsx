@@ -1,7 +1,8 @@
 import React from "react";
-import PhoneDemo from "../src/containers/PhoneDemo/PhoneDemo";
-import Contact from "../src/containers/Contact/Contact";
-import Contributors from "../src/containers/Contributors/Contributors";
+import PhoneDemo from "./sections/phone-demo/PhoneDemo";
+import Contact from "./sections/contact/Contact";
+import Contributors from "./sections/contributors/Contributors";
+import MaterialUIExample from './MaterialUiExample'
 
 const App = () => {
 	return (
@@ -9,6 +10,7 @@ const App = () => {
 			<PhoneDemo />
 			<Contact />
 			<Contributors />
+			<MaterialUIExample/>
 		</div>
 	);
 };

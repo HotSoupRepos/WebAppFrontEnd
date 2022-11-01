@@ -13,5 +13,6 @@ body {
 	font-family: "Inder", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
 		"Lucida Sans", Arial, sans-serif;
 	padding: 1rem;
-	font-size: 16px;
+	font-size: 1rem;
+	box-sizing: border-box;
 }
