@@ -1,0 +1,5 @@
+.phone-body {
+	background-color: var(--black);
+	justify-content: center;
+	color: var(--primaryYellow);
+}
