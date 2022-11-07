@@ -2,3 +2,7 @@
 	background-color: var(--black);
 	color: var(--primaryYellow);
 }
+
+img {
+	margin-top: 2rem;
+}
