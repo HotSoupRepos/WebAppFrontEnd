@@ -4,30 +4,31 @@ import PhoneSearch from '../../assets/images/PhoneSearch.png';
 import PhonePreview from '../../assets/images/PhonePreview.png';
 import PhoneAbout from '../../assets/images/PhoneAbout.png';
 import Grid from '@mui/material/Grid';
+import { Typography } from '@mui/material';
 
 const PhoneDemo = () => {
 	return (
 		<Grid
 			className='phone-body'
 			container
-			spacing={2}
+			spacing={3}
 			sx={{
 				justifyContent: 'center',
 				textAlign: 'center',
-				padding: '3rem',
+				padding: '2rem 0 3rem 0',
 			}}
 		>
 			<Grid item xs={12} md={4}>
-				<h2>1. Find</h2>
-				<img src={PhonePreview} Height='460rem' alt='Phone Demo Preview'></img>
+				<Typography variant='h5'>1. Find</Typography>
+				<img src={PhonePreview} Height='400rem' alt='Phone Demo Preview'></img>
 			</Grid>
 			<Grid item xs={12} md={4}>
-				<h2>2. Eat</h2>
-				<img src={PhoneSearch} Height='460rem' alt='Phone Demo Search'></img>
+				<Typography variant='h5'>2. Eat</Typography>
+				<img src={PhoneSearch} Height='400rem' alt='Phone Demo Search'></img>
 			</Grid>
 			<Grid item xs={12} md={4}>
-				<h2>3. More</h2>
-				<img src={PhoneAbout} Height='460rem' alt='Phone Demo About'></img>
+				<Typography variant='h5'>3. More</Typography>
+				<img src={PhoneAbout} Height='400rem' alt='Phone Demo About'></img>
 			</Grid>
 		</Grid>
 	);
