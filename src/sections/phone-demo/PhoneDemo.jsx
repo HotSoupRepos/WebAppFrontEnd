@@ -5,15 +5,15 @@ import PhonePreview from '../../assets/images/PhonePreview.png';
 import PhoneAbout from '../../assets/images/PhoneAbout.png';
 import Grid from '@mui/material/Grid';
 import { Typography } from '@mui/material';
+import { Image } from '@mui/icons-material';
 
 const PhoneDemo = () => {
 	return (
 		<Grid
 			className='phone-body'
 			container
-			spacing={3}
+			spacing={5}
 			sx={{
-				justifyContent: 'center',
 				textAlign: 'center',
 				padding: '2rem 0 3rem 0',
 			}}
