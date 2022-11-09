@@ -9,9 +9,15 @@ section {
     width: 48VW;
 }
 
+.about-text img{
+    /* background-color: orange; */
+    width: 15VW;
+    padding: 0px 20px;
+}
+
 .image{
     background-color: green;
-    margin-left: 15VW;
+    margin-left: 10VW;
     max-width: 30VW;
     /* width: 48VW; */
 }
