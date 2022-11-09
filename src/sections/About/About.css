@@ -1,0 +1,17 @@
+section {
+    /* background-color: red; */
+    display: flex;
+
+}
+
+.about-text{
+    background-color: orange;
+    width: 48VW;
+}
+
+.image{
+    background-color: green;
+    margin-left: 15VW;
+    max-width: 30VW;
+    /* width: 48VW; */
+}
