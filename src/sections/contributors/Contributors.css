@@ -179,6 +179,7 @@
   padding: 1rem;
   gap: 0.5rem;
   min-width: 250px;
+  padding-top: 50px;
 }
 
 .contributorModal .modal-contributor-name {

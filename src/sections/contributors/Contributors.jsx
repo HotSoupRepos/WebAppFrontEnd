@@ -98,10 +98,7 @@ const Contributors = (props) => {
         {/* Additional contributors should loop through json from Data.js */}
         <div className="contributors-additional">
           {contributors.map((contributor) => {
-            console.log(contributor.name);
-            return (
-              <Contributor   contributor={contributor} key={contributor.id} />
-            );
+            return <Contributor   contributor={contributor} key={contributor.id} />
           })}
         </div>
       </div>
