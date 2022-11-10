@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inder&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
 
 :root {
 	--primaryYellow: #ffc529;
@@ -10,8 +10,8 @@
 
 body {
 	background-color: var(--mainBackground);
-	font-family: "Inder", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-		"Lucida Sans", Arial, sans-serif;
+	font-family: 'Inder', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+		'Lucida Sans', Arial, sans-serif;
 	padding: 1rem;
 	font-size: 1rem;
 	box-sizing: border-box;
