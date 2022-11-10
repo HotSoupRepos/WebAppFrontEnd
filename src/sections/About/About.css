@@ -5,19 +5,18 @@ section {
 }
 
 .about-text{
-    background-color: orange;
+    /* background-color: orange; */
     width: 48VW;
+    font-size: 20px;
 }
 
 .about-text img{
-    /* background-color: orange; */
-    width: 15VW;
+    width: 18VW;
     padding: 0px 20px;
+    margin-top: 50px;
 }
 
 .image{
-    background-color: green;
     margin-left: 10VW;
-    max-width: 30VW;
-    /* width: 48VW; */
+    
 }
