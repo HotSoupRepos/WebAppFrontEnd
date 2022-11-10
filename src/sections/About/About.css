@@ -5,9 +5,9 @@ section {
 }
 
 .about-text{
-    /* background-color: orange; */
     width: 48VW;
     font-size: 20px;
+    padding-left: 2VW;
 }
 
 .about-text img{
@@ -16,7 +16,14 @@ section {
     margin-top: 50px;
 }
 
+.about-text h1{
+ color: #FFC529;
+}
+
+.about-text p{
+  color: white;
+}
+
 .image{
     margin-left: 10VW;
-    
 }
