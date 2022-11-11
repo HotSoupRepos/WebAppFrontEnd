@@ -32,7 +32,7 @@ export default [
 		headshot:
 			"https://media-exp1.licdn.com/dms/image/C4D03AQERENoZ7j9kNg/profile-displayphoto-shrink_800_800/0/1658257728065?e=1673481600&v=beta&t=j0GS3k6vpqa44l7cXZOZdSL4bkhwEYh8aZVZ8s6kyBk",
 		name: "Rafaela Grison",
-		title: "Backend/data",
+		title: "Backend/Data",
 		linkedin: "https://www.linkedin.com/in/rafaelagrison/",
 		github: "",
 		discord: "",
