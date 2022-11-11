@@ -120,7 +120,6 @@ const Contributors = () => {
 					<Grid
 						container
 						item
-						display="flex"
 						direction="row"
 						alignItems="center"
 						justifyContent="center"
