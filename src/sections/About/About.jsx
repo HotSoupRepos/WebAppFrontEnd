@@ -1,7 +1,7 @@
 import React from 'react';
 import './About.css';
-import AppleStore from '../../assets/images/AppleStore.png'
-import GooglePlayStore from '../../assets/images/GooglePlayStore.png'
+import AppleStore from '../../assets/images/AppleStore_DM.png'
+import GooglePlayStore from '../../assets/images/GooglePlayStore_DM.png'
 import UserProfile from '../../assets/images/UserProfile.png'
 
 const About = () => {
