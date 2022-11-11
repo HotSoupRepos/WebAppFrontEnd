@@ -72,7 +72,7 @@ export default [
 		headshot:
 			"https://media.discordapp.net/attachments/1012030681800507492/1036396850460229644/Selfie.jpg?width=476&height=635",
 		name: "April Hughes",
-		title: "Fronend-Web",
+		title: "Frontend-Web",
 		linkedin: "https://www.linkedin.com/in/april-hughes-web-dev/",
 		github: "dreydain - Overview",
 		discord: "April Hughes | Front-end Developer | Seattle, WA",
