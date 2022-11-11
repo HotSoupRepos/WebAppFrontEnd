@@ -3,7 +3,7 @@ export default [
 		id: 1,
 		headshot: "https://avatars.githubusercontent.com/u/99847030?v=4",
 		name: "Jasmine Vo",
-		title: "Frontend",
+		title: "Frontend Engineer",
 		linkedin: "https://www.linkedin.com/in/jasminepvo/",
 		github: "https://github.com/jasminepvo",
 		discord: "discordapp.com/users/jasminepvo#7016",
