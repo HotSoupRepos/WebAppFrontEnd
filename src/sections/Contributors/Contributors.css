@@ -1,9 +1,9 @@
 .con-body {
 	color: var(--primaryYellow);
-	height: 200vh;
+	/* height: 200vh;
 	width: 100%;
 	margin: 0 auto;
-	text-align: center;
+	text-align: center; */
 }
 .contributors-section {
 	height: 120vh;
@@ -43,58 +43,6 @@
 	font-size: 20px;
 	line-height: 25px;
 	color: var(--white);
-	margin: 0;
-}
-
-.contributors-main {
-	height: 25%;
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	margin: auto;
-}
-
-/* Main Contributor  */
-.contributor-main {
-	width: 20%;
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
-}
-.con-main-image {
-	width: auto;
-	height: 125px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 1rem;
-}
-.con-main-headshot {
-	border-radius: 50%;
-	width: 150px;
-	height: 150px;
-	object-fit: cover;
-}
-.con-main-name {
-	font-style: normal;
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 25px;
-	color: var(--secondaryYellow);
-	box-shadow: 1px solid var(--primaryYellow);
-	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	margin: 0;
-}
-
-.con-main-title {
-	font-style: normal;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 18px;
-	color: #ffc529;
-	text-shadow: 1px solid var(--black);
 	margin: 0;
 }
 
