@@ -1,19 +1,11 @@
 section {
-    /* background-color: red; */
     display: flex;
-
 }
 
 .about-text{
     width: 48VW;
     font-size: 20px;
     padding-left: 2VW;
-}
-
-.about-text img{
-    width: 18VW;
-    padding: 0px 20px;
-    margin-top: 50px;
 }
 
 .about-text h1{

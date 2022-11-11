@@ -1,8 +1,7 @@
 import React from 'react';
 import './About.css';
-import AppleStore from '../../assets/images/AppleStore_DM.png'
-import GooglePlayStore from '../../assets/images/GooglePlayStore_DM.png'
 import UserProfile from '../../assets/images/UserProfile.png'
+import AppStoreButtons from '../../assets/AppStoreButtons/AppStoreButtons';
 
 const About = () => {
     return (
@@ -12,8 +11,7 @@ const About = () => {
                     <h1>Connecting those in Need</h1>
                     <p>When one of us has food insecurity, it is a problem for all of us. Let’s change that, one meal at a time. <br /><br />
                          We have too much abundance to let each other go hungry, period. </p>
-                    <img src={AppleStore} alt='Apple store logo'/>
-                    <img src={GooglePlayStore} alt='Google Play store logo'/>
+                    <AppStoreButtons/>
                 </div>
                 <div className='image'>
                     <img src={UserProfile}/>
