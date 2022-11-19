@@ -1,0 +1,22 @@
+section {
+    display: flex;
+}
+
+.about-text{
+    width: 45VW;
+    font-size: 20px;
+    padding-left: 5VW;
+}
+
+.about-text h1{
+ color: #FFC529;
+}
+
+.about-text p{
+  color: white;
+  padding-left: 2VW;
+}
+
+.image{
+    margin-left: 7VW;
+}
