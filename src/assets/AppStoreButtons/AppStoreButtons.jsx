@@ -6,12 +6,15 @@ import GooglePlayStore from '../../assets/images/GooglePlayStore_DM.png'
 function AppStoreButtons () {
 
     function handleClick(appStore) {
+        // TO DO: add tool tip !
         if (appStore == 'Google'){
             alert("This will one day lead to the Play store!")
         }
         else if (appStore == 'Apple'){
             alert("This will one day lead to the IOS store!")
         }
+        // window.open(appStore, '_blank', 'noopener,noreferrer');
+
     }
 
     return (

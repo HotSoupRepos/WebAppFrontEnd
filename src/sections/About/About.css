@@ -3,9 +3,9 @@ section {
 }
 
 .about-text{
-    width: 48VW;
+    width: 45VW;
     font-size: 20px;
-    padding-left: 2VW;
+    padding-left: 5VW;
 }
 
 .about-text h1{
@@ -14,8 +14,9 @@ section {
 
 .about-text p{
   color: white;
+  padding-left: 2VW;
 }
 
 .image{
-    margin-left: 10VW;
+    margin-left: 7VW;
 }
