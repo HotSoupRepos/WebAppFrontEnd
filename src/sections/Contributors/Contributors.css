@@ -5,7 +5,7 @@ body {
 
 .intro-box {
 	width: 70%;
-	height: 150px;
+	height: 9.375rem;
 	margin: auto;
 	border-top: 3px solid var(--black);
 	border-bottom: 3px solid var(--black);
@@ -13,22 +13,22 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	text-align: left;
-	gap: 10px;
+	gap: 0.625rem;
 	margin-bottom: 5rem;
 }
 .intro-box * {
 	position: relative;
-	left: 30px;
+	left: 2rem;
 }
 .intro-box h2 {
-	font-size: 40px;
-	line-height: 50px;
+	font-size: 2.5rem;
+	line-height: 3.125rem;
 	color: var(--primaryYellow);
 	margin: 0;
 }
 .intro-box p {
-	font-size: 20px;
-	line-height: 25px;
+	font-size: 1.25rem;
+	line-height: 1.563rem;
 	color: var(--white);
 	margin: 0;
 }
