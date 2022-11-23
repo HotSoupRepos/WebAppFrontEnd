@@ -77,13 +77,13 @@ export default [
 		github: "dreydain - Overview",
 		discord: "April Hughes | Front-end Developer | Seattle, WA",
 	},
-	// {
-	// 	id: 10,
-	// 	headshot: "",
-	// 	name: "",
-	// 	title: "",
-	// 	linkedin: "",
-	// 	github: "",
-	// 	discord: "",
-	// },
+	{
+		id: 9,
+		headshot: "https://avatars.githubusercontent.com/u/69580485?v=4",
+		name: "Saira Abdulla",
+		title: "Frontend-Web",
+		linkedin: "https://www.linkedin.com/in/saira-abdulla/",
+		github: "https://github.com/saira512dev",
+		discord: "discordapp.com/users/saira#1799",
+	},
 ];
