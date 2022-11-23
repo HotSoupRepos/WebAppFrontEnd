@@ -14,14 +14,14 @@ const Contributors = () => {
 	});
 
 	return (
-		<div className="con-body">
-			<div className="contributors-section">
-				<div className="contributors-intro">
-					<div className="intro-box">
+		<body className="con-body">
+			<section className="contributors-section">
+				<section className="contributors-intro">
+					<section className="intro-box">
 						<h2>Meet The Team</h2>
 						<p>Making an impact</p>
-					</div>
-				</div>
+					</section>
+				</section>
 				<Grid container spacing={10}>
 					{/* Main Contributors */}
 					<Grid
@@ -129,8 +129,8 @@ const Contributors = () => {
 						{contributors}
 					</Grid>
 				</Grid>
-			</div>
-		</div>
+			</section>
+		</body>
 	);
 };
 
