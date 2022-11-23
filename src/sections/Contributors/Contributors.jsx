@@ -14,122 +14,118 @@ const Contributors = () => {
 	});
 
 	return (
-		<body className="con-body">
-			<section className="contributors-section">
-				<section className="contributors-intro">
-					<section className="intro-box">
-						<h2>Meet The Team</h2>
-						<p>Making an impact</p>
-					</section>
-				</section>
-				<Grid container spacing={10}>
-					{/* Main Contributors */}
+		<body>
+			<section className="intro-box">
+				<h2>Meet The Team</h2>
+				<p>Making an impact</p>
+			</section>
+			<Grid container spacing={10}>
+				{/* Main Contributors */}
+				<Grid
+					container
+					item
+					direction="row"
+					alignItems="center"
+					justifyContent="center"
+					spacing={4}
+				>
 					<Grid
-						container
 						item
-						direction="row"
-						alignItems="center"
+						display="flex"
+						direction="column"
 						justifyContent="center"
-						spacing={4}
+						alignItems="center"
 					>
-						<Grid
-							item
-							display="flex"
-							direction="column"
-							justifyContent="center"
-							alignItems="center"
-						>
-							<Avatar
-								alt="President and founder"
-								src="https://source.unsplash.com/mEZ3PoFGs_k"
-								sx={{ width: 120, height: 120 }}
-							/>
-							<Typography variant="h5">Robin Weitzman</Typography>
-							<Typography variant="subtitle1">President & Founder</Typography>
-							<Stack direction="row" spacing={1}>
-								<a href="https://linkedin.com/in">
-									<img src={LinkedInIcon} alt="linkedin icon"></img>
-								</a>
-								<a href="https://github.com">
-									<img src={GithubIcon} alt="github icon"></img>
-								</a>
-								<a href="https://discord.com/users/">
-									<img src={DiscordIcon} alt="discord icon"></img>
-								</a>
-							</Stack>
-						</Grid>
-						<Grid
-							item
-							display="flex"
-							direction="column"
-							justifyContent="center"
-							alignItems="center"
-						>
-							<Avatar
-								alt="President and founder"
-								src="https://source.unsplash.com/mEZ3PoFGs_k"
-								sx={{ width: 120, height: 120 }}
-							/>
-							<Typography variant="h5">Robin Weitzman</Typography>
-							<Typography variant="subtitle1">
-								Vice President & Founder
-							</Typography>
-							<Stack direction="row" spacing={1}>
-								<a href="https://linkedin.com/in">
-									<img src={LinkedInIcon} alt="linkedin icon"></img>
-								</a>
-								<a href="https://github.com">
-									<img src={GithubIcon} alt="github icon"></img>
-								</a>
-								<a href="https://discord.com/users/">
-									<img src={DiscordIcon} alt="discord icon"></img>
-								</a>
-							</Stack>
-						</Grid>
-						<Grid
-							item
-							display="flex"
-							direction="column"
-							justifyContent="center"
-							alignItems="center"
-						>
-							<Avatar
-								alt="President and founder"
-								src="https://source.unsplash.com/mEZ3PoFGs_k"
-								sx={{ width: 120, height: 120 }}
-							/>
-							<Typography variant="h5">Robin Weitzman</Typography>
-							<Typography variant="subtitle1">Co Founder</Typography>
-							<Stack direction="row" spacing={1}>
-								<a href="https://linkedin.com/in">
-									<img src={LinkedInIcon} alt="linkedin icon"></img>
-								</a>
-								<a href="https://github.com">
-									<img src={GithubIcon} alt="github icon"></img>
-								</a>
-								<a href="https://discord.com/users/">
-									<img src={DiscordIcon} alt="discord icon"></img>
-								</a>
-							</Stack>
-						</Grid>
+						<Avatar
+							alt="President and founder"
+							src="https://source.unsplash.com/mEZ3PoFGs_k"
+							sx={{ width: 120, height: 120 }}
+						/>
+						<Typography variant="h5">Robin Weitzman</Typography>
+						<Typography variant="subtitle1">President & Founder</Typography>
+						<Stack direction="row" spacing={1}>
+							<a href="https://linkedin.com/in">
+								<img src={LinkedInIcon} alt="linkedin icon"></img>
+							</a>
+							<a href="https://github.com">
+								<img src={GithubIcon} alt="github icon"></img>
+							</a>
+							<a href="https://discord.com/users/">
+								<img src={DiscordIcon} alt="discord icon"></img>
+							</a>
+						</Stack>
 					</Grid>
-
-					{/* Add a filter option by Frontend-Web, Frontend-App, Backend-App */}
-
-					{/* Additional Contributors will map through json from data.js */}
 					<Grid
-						container
 						item
-						direction="row"
-						alignItems="center"
+						display="flex"
+						direction="column"
 						justifyContent="center"
-						spacing={4}
-						columnSpacing={5}
+						alignItems="center"
 					>
-						{contributors}
+						<Avatar
+							alt="President and founder"
+							src="https://source.unsplash.com/mEZ3PoFGs_k"
+							sx={{ width: 120, height: 120 }}
+						/>
+						<Typography variant="h5">Robin Weitzman</Typography>
+						<Typography variant="subtitle1">
+							Vice President & Founder
+						</Typography>
+						<Stack direction="row" spacing={1}>
+							<a href="https://linkedin.com/in">
+								<img src={LinkedInIcon} alt="linkedin icon"></img>
+							</a>
+							<a href="https://github.com">
+								<img src={GithubIcon} alt="github icon"></img>
+							</a>
+							<a href="https://discord.com/users/">
+								<img src={DiscordIcon} alt="discord icon"></img>
+							</a>
+						</Stack>
+					</Grid>
+					<Grid
+						item
+						display="flex"
+						direction="column"
+						justifyContent="center"
+						alignItems="center"
+					>
+						<Avatar
+							alt="President and founder"
+							src="https://source.unsplash.com/mEZ3PoFGs_k"
+							sx={{ width: 120, height: 120 }}
+						/>
+						<Typography variant="h5">Robin Weitzman</Typography>
+						<Typography variant="subtitle1">Co Founder</Typography>
+						<Stack direction="row" spacing={1}>
+							<a href="https://linkedin.com/in">
+								<img src={LinkedInIcon} alt="linkedin icon"></img>
+							</a>
+							<a href="https://github.com">
+								<img src={GithubIcon} alt="github icon"></img>
+							</a>
+							<a href="https://discord.com/users/">
+								<img src={DiscordIcon} alt="discord icon"></img>
+							</a>
+						</Stack>
 					</Grid>
 				</Grid>
-			</section>
+
+				{/* Add a filter option by Frontend-Web, Frontend-App, Backend-App */}
+
+				{/* Additional Contributors will map through json from data.js */}
+				<Grid
+					container
+					item
+					direction="row"
+					alignItems="center"
+					justifyContent="center"
+					spacing={4}
+					columnSpacing={5}
+				>
+					{contributors}
+				</Grid>
+			</Grid>
 		</body>
 	);
 };
