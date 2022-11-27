@@ -44,7 +44,7 @@ function DrawerAppBar(props) {
                         </ListItemButton>
                     </ListItem>
                 ))}
-                <Button variant={'contained'} size={'large'} sx={{ backgroundColor: 'var(--primaryYellow)', ':hover': { bgcolor: 'var(--secondayYellow)' }, color: 'var(--mainBackground)', borderRadius: 20, lineHeight: 1, width: '80%', paddingBlock: 0.5, marginBlock: 1, fontFamily: "Inder", fontSize: 24, fontWeight: 700 }}>
+                <Button variant={'contained'} size={'large'} sx={{ backgroundColor: 'var(--primaryYellow)', ':hover': { bgcolor: 'var(--secondayYellow)' }, color: 'var(--mainBackground)', borderRadius: 20, lineHeight: 1, width: '70%', paddingBlock: 0.5, marginBlock: 1, fontFamily: "Inder", fontSize: 22, fontWeight: 700 }}>
                     DOWNLOAD APP
                 </Button>
             </List>
@@ -110,7 +110,7 @@ function DrawerAppBar(props) {
                 <Box sx={{ width: 1, maxWidth: 1065, height: 670, position: "relative", overflow: "hidden", borderRadius: 10 }}>
                     <Box sx={{ zIndex: -1, backgroundColor: "var(--mainBackground)", opacity: 0.5, borderRadius: 10, width: 1, height: 670, position: "absolute", right: 45 }} />
                     <Box component={"img"} sx={{ zIndex: -2, width: 1, height: 670, borderRadius: 10, position: "absolute", right: 45, objectFit: "cover" }} alt="Hands serving a hot meal" src={ ServingFoodImage } />
-                    <Box id={'hungerHurtsBox'} sx={{ backgroundColor: "rgba(56, 56, 56, 0.6)", display: "flex", flexDirection: "column", justifyContent: "center", position: "absolute", left: 0, top: 205, height: 254, pl: "9vw", pr: "7vw" }}>
+                    <Box /*id={'hungerHurtsBox'}*/ sx={{ backgroundColor: "rgba(56, 56, 56, 0.6)", display: "flex", flexDirection: "column", justifyContent: "center", position: "absolute", left: 0, top: 205, height: 254, pl: "9vw", pr: "7vw" }}>
                         <Typography variant='h4' sx={{ fontFamily: "Inder", color: "var(--primaryYellow)"}}>
                             Hunger hurts.
                         </Typography>
