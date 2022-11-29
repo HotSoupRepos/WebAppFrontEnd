@@ -12,12 +12,18 @@ import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import { Link } from '@mui/material';
 import Logo from '../../assets/images/HotSoupLogo.png';
 import ServingFoodImage from '../../assets/images/ServingFood.png';
 import '../../global.css';
 
 const drawerWidth = 250;
 const navItems = ['About', 'App', 'Contact', 'Team'];
+const onNavClick = (e, id) => {
+    let element = document.getElementById(id);
+    e.preventDefault();
+    element.scrollIntoView();
+};
 
 function DrawerAppBar(props) {
     const { window } = props;
@@ -38,9 +44,9 @@ function DrawerAppBar(props) {
             <Divider />
             <List>
                 {navItems.map((item) => (
-                    <ListItem key={item} disablePadding>
+                    <ListItem key={item} /*component={Link} to="#"*/ onClick={(e) => onNavClick(e, item)} disablePadding>
                         <ListItemButton sx={{ textAlign: 'center' }}>
-                            <ListItemText primaryTypographyProps={{ fontSize: 20, fontFamily: "Inder" }} primary={item} />
+                            <ListItemText primaryTypographyProps={{ fontSize: 20, fontFamily: "Inder", color: "var(--primaryYellow)" }} primary={item} />
                         </ListItemButton>
                     </ListItem>
                 ))}
@@ -70,7 +76,7 @@ function DrawerAppBar(props) {
                         </Box>
                         <Box sx={{ flexGrow: 1, width: 626, display: { xs: 'none', sm: 'none', md: 'block' }, textAlign: 'center' }}>
                             {navItems.map((item) => (
-                                <Button key={item} sx={{ color: 'var(--primaryYellow)', fontFamily: "Inder", fontSize: 20, fontWeight: 700, marginInline: 1 }}>
+                                <Button onClick={(e) => onNavClick(e, item)} key={item} sx={{ color: 'var(--primaryYellow)', fontFamily: "Inder", fontSize: 20, fontWeight: 700, marginInline: 1 }}>
                                     {item}
                                 </Button>
                             ))}
@@ -108,8 +114,13 @@ function DrawerAppBar(props) {
             </Box>
             <Box component="main" sx={{ display: "flex", justifyContent: "center", paddingTop: 12, width: 1 }}>
                 <Box sx={{ width: 1, maxWidth: 1065, height: 670, position: "relative", overflow: "hidden", borderRadius: 10 }}>
-                    <Box sx={{ zIndex: -1, backgroundColor: "var(--mainBackground)", opacity: 0.5, borderRadius: 10, width: 1, height: 670, position: "absolute", right: 45 }} />
-                    <Box component={"img"} sx={{ zIndex: -2, width: 1, height: 670, borderRadius: 10, position: "absolute", right: 45, objectFit: "cover" }} alt="Hands serving a hot meal" src={ ServingFoodImage } />
+                    {/* grayish filter over hero image. Both are the same except what size screen they appear on and the right value was changed */}
+                    <Box sx={{ display: { xs: 'none', sm: 'block' }, zIndex: -1, backgroundColor: "var(--mainBackground)", opacity: 0.5, borderRadius: 10, width: 1, height: 670, position: "absolute", right: 45 }} />
+                    <Box sx={{ display: { xs: 'block', sm: 'none' }, zIndex: -1, backgroundColor: "var(--mainBackground)", opacity: 0.5, borderRadius: 10, width: 1, height: 670, position: "absolute", right: 0 }} />
+                    {/* hero image. Both are the same except what size screen they appear on and the right value was changed  */}
+                    <Box component={"img"} sx={{ display: { xs: 'none', sm: 'block' }, zIndex: -2, width: 1, height: 670, borderRadius: 10, position: "absolute", right: 45, objectFit: "cover" }} alt="Hands serving a hot meal" src={ ServingFoodImage } />
+                    <Box component={"img"} sx={{ display: { xs: 'block', sm: 'none' }, zIndex: -2, width: 1, height: 670, borderRadius: 10, position: "absolute", right: 0, bottom: 150, objectFit: "cover" }} alt="Hands serving a hot meal" src={ServingFoodImage} />
+                    {/* "Hunger hurts" box, including the gray background portion. */}
                     <Box /*id={'hungerHurtsBox'}*/ sx={{ backgroundColor: "rgba(56, 56, 56, 0.6)", display: "flex", flexDirection: "column", justifyContent: "center", position: "absolute", left: 0, top: 205, height: 254, pl: "9vw", pr: "7vw" }}>
                         <Typography variant='h4' sx={{ fontFamily: "Inder", color: "var(--primaryYellow)"}}>
                             Hunger hurts.
@@ -122,6 +133,7 @@ function DrawerAppBar(props) {
                             <Button>Google Play</Button>
                         </Box> */}
                     </Box>
+                    {/* Yellow accent box */}
                     <Box sx={{ display: { xs: 'none', sm: 'block' }, zIndex: -3, backgroundColor: "var(--primaryYellow)", opacity: 0.5, boxShadow: 1, height: 330, width: 80, borderBottomRightRadius: 20, borderTopRightRadius: 20, position: "absolute", bottom: 47, right: 0 }} />
                 </Box>
             </Box>
