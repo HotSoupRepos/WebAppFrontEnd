@@ -8,18 +8,9 @@ import { Typography } from '@mui/material';
 
 const PhoneDemo = () => {
 	return (
-		<Grid
-			className='phone-body'
-			container
-			spacing={5}
-			sx={{
-				textAlign: 'center',
-				padding: '2rem 0 3rem 0',
-				width: '100vw',
-			}}
-		>
+		<Grid className='phone-body' container zeroMinWidth>
 			<Grid item xs={12} md={4}>
-				<Typography variant='h4'>1.Find</Typography>
+				<Typography variant='h4'>Find</Typography>
 				<img
 					src={PhonePreview}
 					style={{ height: 'auto', width: '55%' }}
@@ -27,7 +18,7 @@ const PhoneDemo = () => {
 				></img>
 			</Grid>
 			<Grid item xs={12} md={4}>
-				<Typography variant='h4'>2.Eat</Typography>
+				<Typography variant='h4'>Eat</Typography>
 				<img
 					src={PhoneSearch}
 					style={{ height: 'auto', width: '55%' }}
@@ -35,7 +26,7 @@ const PhoneDemo = () => {
 				></img>
 			</Grid>
 			<Grid item xs={12} md={4}>
-				<Typography variant='h4'>3.More</Typography>
+				<Typography variant='h4'>More</Typography>
 				<img
 					src={PhoneAbout}
 					style={{ height: 'auto', width: '55%' }}
