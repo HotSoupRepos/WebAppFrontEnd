@@ -1,0 +1,15 @@
+.phone-body {
+	background-color: var(--black);
+	color: var(--primaryYellow);
+	text-align: center;
+	justify-self: center;
+	padding-bottom: 2rem;
+}
+
+img {
+	margin-top: 2rem;
+}
+
+h4 {
+	padding-top: 3rem;
+}
