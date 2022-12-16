@@ -16,6 +16,7 @@ import { Link } from '@mui/material';
 import Logo from '../../assets/images/HotSoupLogo.png';
 import ServingFoodImage from '../../assets/images/ServingFood.png';
 import '../../global.css';
+import './Header.css';
 
 const drawerWidth = 250;
 const navItems = ['About', 'App', 'Contact', 'Team'];
@@ -44,7 +45,7 @@ function DrawerAppBar(props) {
             <Divider />
             <List>
                 {navItems.map((item) => (
-                    <ListItem key={item} /*component={Link} to="#"*/ onClick={(e) => onNavClick(e, item)} disablePadding>
+                    <ListItem key={item} /*component={Link} to={classes.link} OR component="a" href="./yourPath"*/ onClick={(e) => onNavClick(e, item)} disablePadding>
                         <ListItemButton sx={{ textAlign: 'center' }}>
                             <ListItemText primaryTypographyProps={{ fontSize: 20, fontFamily: "Inder", color: "var(--primaryYellow)" }} primary={item} />
                         </ListItemButton>
@@ -113,19 +114,17 @@ function DrawerAppBar(props) {
                 </Drawer>
             </Box>
             <Box component="main" sx={{ display: "flex", justifyContent: "center", paddingTop: 12, width: 1 }}>
-                <Box sx={{ width: 1, maxWidth: 1065, height: 670, position: "relative", overflow: "hidden", borderRadius: 10 }}>
-                    {/* grayish filter over hero image. Both are the same except what size screen they appear on and the right value was changed */}
-                    <Box sx={{ display: { xs: 'none', sm: 'block' }, zIndex: -1, backgroundColor: "var(--mainBackground)", opacity: 0.5, borderRadius: 10, width: 1, height: 670, position: "absolute", right: 45 }} />
-                    <Box sx={{ display: { xs: 'block', sm: 'none' }, zIndex: -1, backgroundColor: "var(--mainBackground)", opacity: 0.5, borderRadius: 10, width: 1, height: 670, position: "absolute", right: 0 }} />
-                    {/* hero image. Both are the same except what size screen they appear on and the right value was changed  */}
-                    <Box component={"img"} sx={{ display: { xs: 'none', sm: 'block' }, zIndex: -2, width: 1, height: 670, borderRadius: 10, position: "absolute", right: 45, objectFit: "cover" }} alt="Hands serving a hot meal" src={ ServingFoodImage } />
-                    <Box component={"img"} sx={{ display: { xs: 'block', sm: 'none' }, zIndex: -2, width: 1, height: 670, borderRadius: 10, position: "absolute", right: 0, bottom: 150, objectFit: "cover" }} alt="Hands serving a hot meal" src={ServingFoodImage} />
-                    {/* "Hunger hurts" box, including the gray background portion. */}
-                    <Box /*id={'hungerHurtsBox'}*/ sx={{ backgroundColor: "rgba(56, 56, 56, 0.6)", display: "flex", flexDirection: "column", justifyContent: "center", position: "absolute", left: 0, top: 205, height: 254, pl: "9vw", pr: "7vw" }}>
-                        <Typography variant='h4' sx={{ fontFamily: "Inder", color: "var(--primaryYellow)"}}>
+                <Box className='heroImgSectionContainer' sx={{ width: 1, maxWidth: 1065, height: 670, position: "relative", overflow: "hidden", borderRadius: 10 }}>
+                    {/* grayish filter over hero image */}
+                    <Box className='heroImgFilter' sx={{ zIndex: -1, backgroundColor: "var(--mainBackground)", opacity: 0.5, borderRadius: 10, width: 1, height: 1, position: "absolute", right: 45 }} />
+                    {/* hero image */}
+                    <Box className='heroImg' component={"img"} sx={{ zIndex: -2, width: 1, height: 1, borderRadius: 10, position: "absolute", right: 45, objectFit: "cover" }} alt="Hands serving a hot meal" src={ ServingFoodImage } />
+                    {/* "Hunger hurts" box, including the gray background portion */}
+                    <Box /*id={'hungerHurtsBox'}*/ className='hungerHurtsBox' sx={{ backgroundColor: "rgba(56, 56, 56, 0.6)", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", position: "absolute", left: 0, top: 205, height: 254, pl: "9vw", pr: "7vw" }}>
+                        <Typography variant='h4' sx={{ fontFamily: "Inder", color: "var(--primaryYellow)", width: 260 }}>
                             Hunger hurts.
                         </Typography>
-                        <Typography variant='h6' sx={{ fontFamily: "Inder", color: "var(--white)", lineHeight: "25px" }}>
+                        <Typography variant='h6' sx={{ fontFamily: "Inder", color: "var(--white)", lineHeight: "25px", width: 260 }}>
                             Let's get you something to<br/>eat. Don't worry, we get it.<br/>Now, go eat!
                         </Typography>
                         {/* <Box sx={{ display: 'flex' }}>

@@ -14,8 +14,8 @@ const App = () => {
 				<Header />
 			</ThemeProvider>
 			<PhoneDemo />
-			<Contact id="contact" />
-			<Contributors id="team" />
+			<Contact className='contact' />
+			<Contributors className="team" />
 			<MaterialUIExample/>
 		</div>
 	);
