@@ -12,7 +12,6 @@ import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import { Link } from '@mui/material';
 import Logo from '../../assets/images/HotSoupLogo.png';
 import ServingFoodImage from '../../assets/images/ServingFood.png';
 import '../../global.css';
@@ -21,8 +20,10 @@ import './Header.css';
 const drawerWidth = 250;
 const navItems = ['About', 'App', 'Contact', 'Team'];
 const onNavClick = (e, id) => {
-    let element = document.getElementById(id);
+    let element = document.getElementsByClassName(id);
+    console.log(element);
     e.preventDefault();
+    // window.HTMLElement.prototype.scrollIntoView = function () { };
     element.scrollIntoView();
 };
 
@@ -45,8 +46,8 @@ function DrawerAppBar(props) {
             <Divider />
             <List>
                 {navItems.map((item) => (
-                    <ListItem key={item} /*component={Link} to={classes.link} OR component="a" href="./yourPath"*/ onClick={(e) => onNavClick(e, item)} disablePadding>
-                        <ListItemButton sx={{ textAlign: 'center' }}>
+                    <ListItem key={item} onClick={(e) => onNavClick(e, item)} disablePadding>
+                        <ListItemButton sx={{ textAlign: 'center' }} component="a" href={`/${item}`}>
                             <ListItemText primaryTypographyProps={{ fontSize: 20, fontFamily: "Inder", color: "var(--primaryYellow)" }} primary={item} />
                         </ListItemButton>
                     </ListItem>
