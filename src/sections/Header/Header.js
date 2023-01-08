@@ -20,10 +20,9 @@ import './Header.css';
 const drawerWidth = 250;
 const navItems = ['About', 'App', 'Contact', 'Team'];
 const onNavClick = (e, id) => {
-    let element = document.getElementsByClassName(id);
+    let element = document.getElementById(id);
     console.log(element);
     e.preventDefault();
-    // window.HTMLElement.prototype.scrollIntoView = function () { };
     element.scrollIntoView();
 };
 
@@ -78,7 +77,7 @@ function DrawerAppBar(props) {
                         </Box>
                         <Box sx={{ flexGrow: 1, width: 626, display: { xs: 'none', sm: 'none', md: 'block' }, textAlign: 'center' }}>
                             {navItems.map((item) => (
-                                <Button onClick={(e) => onNavClick(e, item)} key={item} sx={{ color: 'var(--primaryYellow)', fontFamily: "Inder", fontSize: 20, fontWeight: 700, marginInline: 1 }}>
+                                <Button onClick={(e) => onNavClick(e, item)} key={item} component="a" href={`/${item}`} sx={{ color: 'var(--primaryYellow)', fontFamily: "Inder", fontSize: 20, fontWeight: 700, marginInline: 1 }}>
                                     {item}
                                 </Button>
                             ))}
@@ -114,7 +113,7 @@ function DrawerAppBar(props) {
                     {drawer}
                 </Drawer>
             </Box>
-            <Box component="main" sx={{ display: "flex", justifyContent: "center", paddingTop: 12, width: 1 }}>
+            <Box id="About" component="main" sx={{ display: "flex", justifyContent: "center", paddingTop: 12, width: 1 }}>
                 <Box className='heroImgSectionContainer' sx={{ width: 1, maxWidth: 1065, height: 670, position: "relative", overflow: "hidden", borderRadius: 10 }}>
                     {/* grayish filter over hero image */}
                     <Box className='heroImgFilter' sx={{ zIndex: -1, backgroundColor: "var(--mainBackground)", opacity: 0.5, borderRadius: 10, width: 1, height: 1, position: "absolute", right: 45 }} />

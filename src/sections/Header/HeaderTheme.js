@@ -1,5 +1,4 @@
 import { createTheme } from '@mui/material/styles';
-// import { makeStyles } from '@mui/material/styles';
 
 const theme = createTheme({
     breakpoints: {
@@ -13,20 +12,4 @@ const theme = createTheme({
     },
 });
 
-// const useStyles = makeStyles(theme => ({
-//     root: {
-//         [theme.breakpoints.up('sm')]: {
-//             #hungerHurtsBox {
-//                 top: 300,
-//             }
-//         },
-//     },
-//     #hungerHurtsBox: {
-//         [theme.breakpoints.up('sm')]: {
-//             top: 300,
-//         }
-//     }
-// }));
-
-// export default { theme, useStyles }
 export default theme;
