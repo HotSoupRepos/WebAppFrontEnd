@@ -14,7 +14,6 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Logo from '../../assets/images/HotSoupLogo.png';
 import ServingFoodImage from '../../assets/images/ServingFood.png';
-import '../../global.css';
 import './Header.css';
 
 const drawerWidth = 250;
@@ -120,7 +119,7 @@ function DrawerAppBar(props) {
                     {/* hero image */}
                     <Box className='heroImg' component={"img"} sx={{ zIndex: -2, width: 1, height: 1, borderRadius: 10, position: "absolute", right: 45, objectFit: "cover" }} alt="Hands serving a hot meal" src={ ServingFoodImage } />
                     {/* "Hunger hurts" box, including the gray background portion */}
-                    <Box /*id={'hungerHurtsBox'}*/ className='hungerHurtsBox' sx={{ backgroundColor: "rgba(56, 56, 56, 0.6)", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", position: "absolute", left: 0, top: 205, height: 254, pl: "9vw", pr: "7vw" }}>
+                    <Box className='hungerHurtsBox' sx={{ backgroundColor: "rgba(56, 56, 56, 0.6)", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", position: "absolute", left: 0, top: 205, height: 254, pl: "9vw", pr: "7vw" }}>
                         <Typography variant='h4' sx={{ fontFamily: "Inder", color: "var(--primaryYellow)", width: 260 }}>
                             Hunger hurts.
                         </Typography>
