@@ -8,7 +8,7 @@ import { Typography } from '@mui/material';
 
 const PhoneDemo = () => {
 	return (
-		<Grid className='phone-body' container zeroMinWidth>
+		<Grid id='App' className='phone-body' container zeroMinWidth>
 			<Grid item xs={12} md={4}>
 				<Typography variant='h4'>Find</Typography>
 				<img
