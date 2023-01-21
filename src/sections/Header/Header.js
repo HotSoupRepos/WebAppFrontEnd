@@ -50,7 +50,7 @@ function DrawerAppBar(props) {
                         </ListItemButton>
                     </ListItem>
                 ))}
-                <Button variant={'contained'} size={'large'} sx={{ backgroundColor: 'var(--primaryYellow)', ':hover': { bgcolor: 'var(--secondayYellow)' }, color: 'var(--mainBackground)', borderRadius: 20, lineHeight: 1, width: '70%', paddingBlock: 0.5, marginBlock: 1, fontFamily: "Inder", fontSize: 22, fontWeight: 700 }}>
+                <Button href='https://www.hotsoup.info/' variant={'contained'} size={'large'} sx={{ backgroundColor: 'var(--primaryYellow)', ':hover': { bgcolor: 'var(--secondayYellow)' }, color: 'var(--mainBackground)', borderRadius: 20, lineHeight: 1, width: '70%', paddingBlock: 0.5, marginBlock: 1, fontFamily: "Inder", fontSize: 22, fontWeight: 700 }}>
                     DOWNLOAD APP
                 </Button>
             </List>
@@ -81,7 +81,7 @@ function DrawerAppBar(props) {
                                 </Button>
                             ))}
                         </Box>
-                        <Button variant={'contained'} size={'large'} sx={{ display: { xs: 'none', sm: 'none', md: 'block' }, backgroundColor: 'var(--primaryYellow)', ':hover': { bgcolor: 'var(--secondayYellow)' }, color: 'var(--mainBackground)', borderRadius: 20, width: 300, lineHeight: 1, paddingBlock: 0.5, fontFamily: "Inder", fontSize: 24, fontWeight: 700 }}>
+                        <Button href='https://www.hotsoup.info/' variant={'contained'} size={'large'} sx={{ display: { xs: 'none', sm: 'none', md: 'block' }, backgroundColor: 'var(--primaryYellow)', ':hover': { bgcolor: 'var(--secondayYellow)' }, color: 'var(--mainBackground)', borderRadius: 20, width: 300, lineHeight: 1, paddingBlock: 0.5, fontFamily: "Inder", fontSize: 24, fontWeight: 700 }}>
                             DOWNLOAD APP
                         </Button>
                     </Box>
