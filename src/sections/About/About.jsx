@@ -1,7 +1,7 @@
 import React from 'react';
 import './About.css';
 import UserProfile from '../../assets/images/UserProfile.png'
-import AppStoreButtons from '../../assets/AppStoreButtons/AppStoreButtons';
+// import AppStoreButtons from '../../assets/AppStoreButtons/AppStoreButtons';
 
 const About = () => {
     return (

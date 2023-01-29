@@ -7,7 +7,7 @@ function AppStoreButtons () {
 
     function handleClick(appStore) {
         // TO DO: add tool tip !
-        if (appStore == 'Google'){
+        if (appStore === 'Google'){
             alert("This will one day lead to the Play store!")
         }
         else if (appStore == 'Apple'){
