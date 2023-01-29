@@ -1,0 +1,148 @@
+/* Extra small devices (phones, 768px and down) */
+@media only screen and (max-width: 768px) {
+  section {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
+  .about-text {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .about-text h1 {
+    color: #ffc529;
+    display: flex;
+    text-align: center;
+  }
+
+  .about-text p {
+    color: white;
+    text-align: justify;
+    text-justify: auto;
+  }
+
+  .image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up)*/
+@media only screen and (min-width: 768px) {
+  section {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
+  .about-text {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .about-text h1 {
+    color: #ffc529;
+    display: flex;
+    text-align: center;
+  }
+
+  .about-text p {
+    color: white;
+    text-align: justify;
+    text-justify: auto;
+  }
+  .image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .image img {
+    width: 70%;
+    height: auto;
+  }
+}
+
+/* Large devices*/
+@media only screen and (min-width: 1025px) {
+  section {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-container {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+  }
+
+  .about-text {
+    max-width: 35%;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .about-text h1 {
+    color: #ffc529;
+    text-align: start;
+  }
+
+  .about-text p {
+    color: white;
+    text-align: justify;
+    text-justify: auto;
+  }
+
+  .image {
+    max-width: 50%;
+    border: #ffc529;
+  }
+  .image img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* X-Large devices*/
+  @media only screen and (min-width: 1600px) {
+    section {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .section-container {
+      display: flex;
+      width: 70%;
+      justify-content: space-between;
+    }
+
+    .about-text {
+      max-width: 35%;
+      font-size: 20px;
+      padding-left: 30px;
+    }
+
+    .about-text h1 {
+      color: #ffc529;
+      text-align: start;
+    }
+
+    .about-text p {
+      color: white;
+      text-align: justify;
+      text-justify: auto;
+    }
+
+    .image {
+      max-width: 50%;
+      border: #ffc529;
+    }
+    .image img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
