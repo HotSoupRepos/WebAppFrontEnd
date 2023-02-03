@@ -17,13 +17,14 @@
 	
 	  .intro-box {
 		height: 150px;
-		border-top: 3px solid var(--black);
-		border-bottom: 3px solid var(--black);
+		border-top: 3px solid var(--primaryYellow);
+		border-bottom: 3px solid var(--primaryYellow);
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		text-align: center;
 		gap: 10px;
+		
 	  }
 	  
 	  .intro-box h2 {
@@ -124,8 +125,8 @@
 	
 	  .con-headshot {
 		border-radius: 50%;
-		width: 120px;
-		height: 120px;
+		width: 150px;
+		height: 150px;
 		object-fit: cover;
 	  }
 	  .con-name {
@@ -237,8 +238,8 @@
 	}
 	.con-main-headshot {
 	  border-radius: 50%;
-	  width: 120px;
-	  height: 120px;
+	  width: 150px;
+	  height: 150px;
 	  object-fit: cover;
 	}
 	.con-main-name {
@@ -296,8 +297,8 @@
   
 	.con-headshot {
 	  border-radius: 50%;
-	  width: 120px;
-	  height: 120px;
+	  width: 150px;
+	  height: 150px;
 	  object-fit: cover;
 	}
 	.con-name {
@@ -467,8 +468,8 @@
   
 	.con-headshot {
 	  border-radius: 50%;
-	  width: 120px;
-	  height: 120px;
+	  width: 150px;
+	  height: 150px;
 	  object-fit: cover;
 	}
 	.con-name {
@@ -639,8 +640,8 @@
 
   .con-headshot {
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
   }
   .con-name {
