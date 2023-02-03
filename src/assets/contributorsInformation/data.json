@@ -1,0 +1,84 @@
+{
+    "contributors": [
+        {
+            "id": 0,
+            "name": "Robin Weitzman",
+            "role": "President & Founder",
+            "img": "https://source.unsplash.com/mEZ3PoFGs_k",
+            "linkedin": "https://linkedin.com/in",
+            "github": "https://github.com",
+            "discord": "#"
+        },
+        {
+            "id": 1,
+            "name": "Jasmine Love",
+            "role": "Vice President & Founder",
+            "img": "https://source.unsplash.com/mEZ3PoFGs_k",
+            "linkedin": "https://linkedin.com/in",
+            "github": "https://github.com",
+            "discord": "#"
+        },
+        {
+            "id": 2,
+            "name": "Jasmine Love",
+            "role": "Founder",
+            "img": "https://source.unsplash.com/mEZ3PoFGs_k",
+            "linkedin": "https://linkedin.com/in",
+            "github": "https://github.com",
+            "discord": "#"
+        },
+        {
+            "id": 3,
+            "name": "Danny Phantom",
+            "role": "Frontend",
+            "img": "https://source.unsplash.com/mEZ3PoFGs_k",
+            "linkedin": "https://linkedin.com/in",
+            "github": "https://github.com",
+            "discord": "#"
+        },{
+            "id": 4,
+            "name": "Danny Phantom",
+            "role": "Frontend",
+            "img": "https://source.unsplash.com/mEZ3PoFGs_k",
+            "linkedin": "https://linkedin.com/in",
+            "github": "https://github.com",
+            "discord": "#"
+        },
+        {
+            "id": 5,
+            "name": "Danny Phantom",
+            "role": "Frontend",
+            "img": "https://source.unsplash.com/mEZ3PoFGs_k",
+            "linkedin": "https://linkedin.com/in",
+            "github": "https://github.com",
+            "discord": "#"
+        },
+        {
+            "id": 6,
+            "name": "Danny Phantom",
+            "role": "Frontend",
+            "img": "https://source.unsplash.com/mEZ3PoFGs_k",
+            "linkedin": "https://linkedin.com/in",
+            "github": "https://github.com",
+            "discord": "#"
+        },
+        {
+            "id": 7,
+            "name": "Danny Phantom",
+            "role": "Frontend",
+            "img": "https://source.unsplash.com/mEZ3PoFGs_k",
+            "linkedin": "https://linkedin.com/in",
+            "github": "https://github.com",
+            "discord": "#"
+        },
+        {
+            "id": 8,
+            "name": "Danny Phantom",
+            "role": "Frontend",
+            "img": "https://source.unsplash.com/mEZ3PoFGs_k",
+            "linkedin": "https://linkedin.com/in",
+            "github": "https://github.com",
+            "discord": "#"
+        }
+    ]
+}
