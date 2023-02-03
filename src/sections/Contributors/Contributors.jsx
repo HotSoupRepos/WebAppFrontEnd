@@ -3,6 +3,7 @@ import "./Contributors.css";
 import DiscordIcon from "../../assets/icons/discord-fill.svg";
 import GithubIcon from "../../assets/icons/github-fill.svg";
 import LinkedInIcon from "../../assets/icons/linkedin-box-fill.svg";
+import ContributorsData from "../../Data"
 
 const Contributors = (props) => {
 	return (
@@ -93,33 +94,38 @@ const Contributors = (props) => {
 
 				{/* Add the filter option */}
 
-				{/* Additional contributors should loop through json from Data.js */}
-				{/* <div className="contributors-additional">
-					<div className="contributor">
-						<div className="con-image">
-							<img
-								className="con-headshot"
-								src={props.headshot}
-								alt="headshot"
-							></img>
-						</div>
-						<div className="con-content">
-							<h1 className="con-name">{props.name}</h1>
-							<h2 className="con-title">{props.title}</h2>
-						</div>
-						<div className="con-socials">
-							<a href={props.linkedin}>
-								<img src={LinkedInIcon} alt="linkedin icon"></img>
-							</a>
-							<a href={props.github}>
-								<img src={GithubIcon} alt="github icon"></img>
-							</a>
-							<a href={props.discord}>
-								<img src={DiscordIcon} alt="discord icon"></img>
-							</a>
-						</div>
-					</div>
-				</div> */}
+				<div className="contributors-additional">
+					{ContributorsData.map((contributor) => {
+						return (
+							<div className="contributor-additional">
+								<div className="con-image">
+									<img
+										className="con-headshot"
+										src={contributor.headshot}
+										alt="headshot"
+									></img>
+								</div>
+								<div className="con-additional-info">
+									<div className="con-content">
+										<h1 className="con-name">{contributor.name}</h1>
+										<h2 className="con-title">{contributor.title}</h2>
+									</div>
+									<div className="con-socials">
+										<a href={contributor.linkedin}>
+											<img src={LinkedInIcon} alt="linkedin icon"></img>
+										</a>
+										<a href={contributor.github}>
+											<img src={GithubIcon} alt="github icon"></img>
+										</a>
+										<a href={contributor.discord}>
+											<img src={DiscordIcon} alt="discord icon"></img>
+										</a>
+									</div>
+								</div>
+							</div>
+						)
+					})}
+				</div>
 			</div>
 		</div>
 	);
