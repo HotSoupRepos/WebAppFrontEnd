@@ -1,0 +1,22 @@
+@media (max-width: 600px) {
+    .heroImgSectionContainer {
+        height: 500px !important;
+    }
+
+    .heroImgFilter {
+        right: 0 !important;
+    }
+
+    .heroImg {
+        right: 0 !important;
+        object-position: 55% 100%;
+        object-fit: none !important;
+    }
+
+    .hungerHurtsBox {
+        top: 300px !important;
+        height: 180px !important;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+}

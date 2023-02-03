@@ -2,7 +2,7 @@ import React from "react";
 import "./PhoneDemo.css";
 
 const PhoneDemo = () => {
-	return <div>PhoneDemo</div>;
+	return <div id="App">PhoneDemo</div>;
 };
 
 export default PhoneDemo;

@@ -7,7 +7,7 @@ import ContributorsData from "../../Data"
 
 const Contributors = (props) => {
 	return (
-		<div className="con-body">
+		<div id="Team" className="con-body">
 			<div className="contributors-section">
 				<div className="contributors-intro">
 					<div className="intro-box">
